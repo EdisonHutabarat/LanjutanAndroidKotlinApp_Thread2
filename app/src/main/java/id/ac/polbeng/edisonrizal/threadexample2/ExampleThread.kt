@@ -6,7 +6,7 @@ class ExampleThread(private var seconds: Int) : Thread() {
 
     private val TAG = "MainActivity"
 
-    override fun run () {
+    override fun run() {
         for (i in 1 until seconds) {
             Log.d(TAG, "startThread: $i")
             try {
